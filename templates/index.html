@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Cinzel|Comfortaa|Cormorant+Garamond|Dosis|EB+Garamond|Fredoka+One|Great+Vibes|Josefin+Sans|Josefin+Slab|Julius+Sans+One|Lobster+Two|Lustria|Montserrat|Montserrat+Alternates|Montserrat+Subrayada|Playfair+Display|Poiret+One|Quicksand|Raleway|Righteous|Sacramento|Titillium+Web|Ubuntu|Uncial+Antiqua|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style type="text/css">
+
+	header,.container {
+	font-family: 'Righteous', cursive;
+	}
+	
+	.container ul li a{
+		text-decoration:none;
+	}
+</style>
+</head>
+<body>
+	<header class="jumbotron text-info" >
+		<h1><i class="fas fa-school"></i>&nbsp;| &nbsp;Welcome To Students Management System</h1>
+		<p>
+			Here You Can Manage Students Data
+		</p>
+		<span><a href="/" style="color:#10899e;"> Home</a> ></span>
+	</header>
+	<div class="container " >
+		<ul style="list-style:none;" ><br>
+			<li><button class="btn-info btn-lg" ><a href="{% url 'addStudent' %}" class="text-white"  >Add New Student</a></button></li><br>
+			<li><button class="btn-info btn-lg" ><a href="{% url 'searchStudent' %}" class="text-white" >Search Students By Id</a></button></li><br>
+			<li><button class="btn-info btn-lg" ><a href="{% url 'allStudents' %}" class="text-white"  >Display All The Students</a></button></li><br>
+			
+		</ul>
+	</div>
+</body>
+</html>

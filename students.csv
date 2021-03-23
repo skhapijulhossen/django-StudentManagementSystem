@@ -1,0 +1,6 @@
+StudentId,Name,Gender,DateOfBirth,City,State,EmailId,Qualification,Stream
+1,Raj,Male,10-10-1995,Mumbai,Maharashtra,raj@gmail.com,B.E,Electronics
+2,Priyanka,Female,20-10-1995,Pune,Maharashtra,priyanka@gmail.com,B.Tech,IT
+3,Sk Hapijul Hossen,Male,28-11-1999,Haldia,West Bengal,skhapijulhassan@gmail.com,Diploma,CS&T
+4,Aditi Srivastav,Female,29-12-2000,Haldia,West Bengal,1229200aditi@gmail.com,Diploma,CS&T
+5,Happy,Male,28-11-1999,Haldia,West Bengal,skhapijulhossen@gmail.com,Diploma,CSE

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Student</title>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Cinzel|Comfortaa|Cormorant+Garamond|Dosis|EB+Garamond|Fredoka+One|Great+Vibes|Josefin+Sans|Josefin+Slab|Julius+Sans+One|Lobster+Two|Lustria|Montserrat|Montserrat+Alternates|Montserrat+Subrayada|Playfair+Display|Poiret+One|Quicksand|Raleway|Righteous|Sacramento|Titillium+Web|Ubuntu|Uncial+Antiqua|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style type="text/css">
+
+	header,.container {
+	font-family: 'Righteous', cursive;
+	}
+	
+	table tr td input {
+		width:60px;
+	}
+	input[type="text"],input[type="number"],input[type="email"]{
+		width:80%;
+		border:1.5px groove #10899e;
+	}
+</style>
+</head>
+<body>
+	<header class="jumbotron text-info" >
+		<h1><i class="fas fa-plus"></i>&nbsp;| &nbsp;Add New Student</h1>
+		<p>
+			Here You Can Add New Student Data
+		</p>
+		<span><a href="/" style="color:#10899e;"> Home</a> > Add Students</span>
+	</header>
+	<div class="container text-left" >
+		<form action="add/" method="POST" >
+			{% csrf_token %}
+				<label class="text-info" >Student ID</label><br>
+				<input type="number" name="studentId" required="required" ><br><br>
+				<label class="text-info" >Student Name</label><br>
+				<input type="text" name="studentName" required="required" ><br><br>
+				<label class="text-info" >Gender</label><br>
+				<label class="text-black" ><input type="checkbox" name="male" >&nbsp;&nbsp;&nbsp;Male</label><br>
+				<label class="text-black" ><input type="checkbox" name="female" >&nbsp;&nbsp;&nbsp;Female</label><br><br>
+				
+				<label class="text-info" >Birth Date</label><br>
+					<table>
+						<tr>
+							<td><input type="number" required="required" name="day" >/</td>
+							<td><input type="number" required="required"  name="month" >/</td>
+							<td><input type="number" required="required" name="year"  >/</td>
+							<td><i class="far fa-calendar-alt"></i></td>
+						</tr>
+						<tr>
+							<td>DD</td>
+							<td>MM</td>
+							<td>YYYY</td>
+						</tr>
+					</table><br><br>
+				
+				<label class="text-info" >City</label><br>
+				<input type="text" required="required" name="city"  ><br><br>
+				
+				<label class="text-info" >State</label><br>
+				<input type="text" required="required"  name="state" ><br><br>
+				
+				<label class="text-info" >Email@</label><br>
+				<input type="email" required="required" name="email"  ><br><br>
+				
+				<label class="text-info" >Qualification</label><br>
+				<input type="text" name="qualification" required="required" ><br><br>
+				
+				<label class="text-info" >Stream</label><br>
+				<input type="text" required="required" name="stream" ><br><br>
+				
+				<input type="submit" value="Submit"  class="btn-info btn-lg" >
+		</form><br><br><br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Result</title>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Cinzel|Comfortaa|Cormorant+Garamond|Dosis|EB+Garamond|Fredoka+One|Great+Vibes|Josefin+Sans|Josefin+Slab|Julius+Sans+One|Lobster+Two|Lustria|Montserrat|Montserrat+Alternates|Montserrat+Subrayada|Playfair+Display|Poiret+One|Quicksand|Raleway|Righteous|Sacramento|Titillium+Web|Ubuntu|Uncial+Antiqua|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style type="text/css">
+
+	header,.container {
+	font-family: 'Righteous', cursive;
+	}
+	.container {
+		align-self:center;
+	}
+	
+	.container table tr:nth-child(odd){
+		background:#10899e;
+		color:snow;
+		
+	}
+	
+	.container table tr .data{
+		width:80%;
+	}
+	
+	.container table tr td{
+		padding:3px 9px;
+	}
+</style>
+</head>
+<body>
+	<header class="jumbotron text-info" >
+		<h1><i class="fas fa-user-graduate"></i>&nbsp;| &nbsp;Student Details</h1>
+		<p>
+			Here Is The Details About Student
+		</p>
+		<span><a href="/" style="color:#10899e;"> Home</a> > Results</span>
+	</header>
+	<div class="container text-left" >
+		<table border="1" cellspacing="3" cellspacing="3" >
+			<tr>
+				<td>Student Id</td>
+				<td class="data" >{{StudentId}}</td>
+			</tr>
+			<tr>
+				<td>Student Name</td>
+				<td class="data" >{{Name}}</td>
+			</tr>
+			
+			<tr>
+				<td>Gender</td>
+				<td class="data" >{{Gender}}</td>
+			</tr>
+			
+			<tr>
+				<td>DateOfBirth</td>
+				<td class="data" >{{bday}}</td>
+			</tr>
+			
+			<tr>
+				<td>City</td>
+				<td class="data" >{{city}}</td>
+			</tr>
+			
+			<tr>
+				<td>State</td>
+				<td class="data" >{{state}}</td>
+			</tr>
+			
+			<tr>
+				<td>Email Id</td>
+				<td class="data" >{{email}}</td>
+			</tr>
+			
+			<tr>
+				<td>Qualification</td>
+				<td class="data" >{{qualification}}</td>
+			</tr>
+			
+			<tr>
+				<td>Stream</td>
+				<td class="data" >{{stream}}</td>
+			</tr>
+		
+		</table>
+		<br><br><br>
+</div>
+</body>
+</html>
